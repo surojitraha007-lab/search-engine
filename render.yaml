@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-search-engine
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python My_project_new.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
